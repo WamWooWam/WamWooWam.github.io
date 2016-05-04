@@ -4,7 +4,7 @@ body{background:#000000;font-size:.80em;font-family:Helvetica Neue, Open Sans, s
 a:link, a:visited{text-decoration:underline;}
 img{margin: auto;}
 a:hover{text-decoration:underline;}
-p{margin-bottom:10px;line-height:1.6em; color:#FFFFFF;}
+p{margin-bottom:2px;line-height:1.6em; color:#FFFFFF;}
 h1, h2, h3, h4, h5, h6{font-size:1.5em;color:#FFFFFF;text-transform:none;font-weight:400;font-family:"Helvetica Neue Light","Open Sans", sans-serif;}
 h1{font-size:2.2em;font-weight:300;}
 h1 a{color:#000000;text-decoration:none;}
@@ -12,7 +12,7 @@ h1.headtext{float:left; display: inline-block; color: #000000; text-decoration:n
 h2{font-size:1.2em;font-weight:400;padding-left: 10px;padding-right: 10px;}
 h2.userinfo {text-decoration: underline; float:right; display: inline-block; padding-top: 3px; padding-right: 20px;}
 h3{font-size:1.5em;}
-h4{font-size:1.1em;}
+h4{font-size:1em;}
 h2 a {color: #FFFFFF;}
 h2.userinfo {color:#000000;}
 h5, h6{font-size:1em;}
@@ -22,7 +22,7 @@ h5, h6{font-size:1em;}
 .header h1{font-weight:300;margin:0px;padding:0px 0px 0px 20px;color:#000000;border:none;line-height:2em;font-size:2em;font-weight:300}
 .main{padding:0px 12px;text-align:center; }
 .leftCol{padding:6px 0px;min-height:200px;}
-.footer{color:#FFFFFF;margin:0px auto;text-align:center;line-height:normal;}
+.footer{color:#FFFFFF;margin-bottom:20px;text-align:center;line-height:normal;}
 .footer a {color:#FFFFFF;}
 div.hideSkiplink{background-color:#FFFFFF;width:100%;}
 .clear{clear:both;}
