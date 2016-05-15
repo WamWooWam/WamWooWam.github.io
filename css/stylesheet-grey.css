@@ -25,6 +25,7 @@ h5, h6{font-size:1em;}
 .footer{color:#4C4C4C;margin-bottom:20px;text-align:center;line-height:normal;}
 .footer a {color:#4C4C4C;}
 div.hideSkiplink{background-color:#4C4C4C;width:100%;}
+div.announcements{background-color:#FF5E5E; border:5px solid red; border-radius:4px; color:#ffffff; height:40px;}
 .clear{clear:both;}
 .title{display:block;text-align:center;width:100%;}
 .failureNotification{font-size:1.2em;color:Red;}
