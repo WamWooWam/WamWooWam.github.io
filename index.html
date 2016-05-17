@@ -1,35 +1,89 @@
 ﻿<!DOCTYPE html>
 <html>
+<!--
+         _       __              _       __          _       __                   __  __            _____ _ __
+        | |     / /___ _____ ___| |     / /___  ____| |     / /___ _____ ___     / /_/ /_  ___     / ___/(_) /____
+        | | /| / / __ `/ __ `__ \ | /| / / __ \/ __ \ | /| / / __ `/ __ `__ \   / __/ __ \/ _ \    \__ \/ / __/ _ \
+        | |/ |/ / /_/ / / / / / / |/ |/ / /_/ / /_/ / |/ |/ / /_/ / / / / / /  / /_/ / / /  __/   ___/ / / /_/  __/
+        |__/|__/\__,_/_/ /_/ /_/|__/|__/\____/\____/|__/|__/\__,_/_/ /_/ /_/   \__/_/ /_/\___/   /____/_/\__/\___/
+                                           __  ___            __
+                                          /  |/  /____   ____/ /___   _____ ____
+                                         / /|_/ // __ \ / __  // _ \ / ___// __ \
+                                        / /  / // /_/ // /_/ //  __// /   / / / /
+                                       /_/  /_/ \____/ \__,_/ \___//_/   /_/ /_/
+
+     -->
 <head>
-    <title>wamwoowam.github.io</title>
-    <meta charset="utf-8" />
-    <link href="http://wamwoowam.github.io/css/stylesheet-error.css" type="text/css" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>WamWooWam the Site!</title>
+    <link rel="stylesheet" href="https://wamwoowam.github.io/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://wamwoowam.github.io/css/wamwoowam.css" />
+    <script src="https://wamwoowam.github.io/js/jquery.js" type="application/javascript"></script>
+    <script src="https://wamwoowam.github.io/js/bootstrap.min.js"></script>
+
+    <script>
+        audiojs.events.ready(function () {
+            audiojs.createAll();
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <asp:ContentPlaceHolder ID="head">
+    </asp:ContentPlaceHolder>
 </head>
-    <body style="margin: 20px 10px 10px 10px;">
-        <div class="header" style="display: flex; justify-content: space-between;border-bottom-right-radius:0px; border-bottom-right-radius:0px;">
-            <div class="title">
-                <h1 class="headtext"><a style="text-decoration:none; " href="http://wamwoowam.ddns.net/">WamWooWam the Site!</a></h1>
+<body style="padding-top: 50px; text-align: center; font-family: 'Segoe UI', SegoeUI !important;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://wamwoowam.ddns.net/modern/index.aspx" style="display: inline-block;">WamWooWam the Site!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://wamwoowam.ddns.net/modern/index.aspx">Home</a></li>
+                    <li><a href="http://wamwoowam.ddns.net/modern/blog/index.php">Blog</a></li>
+                    <li><a href="http://wamwoowam.ddns.net/modern/forums/index.php">Fourms</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.youtube.com/user/woowamwam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>YouTube</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://www.facebook.com/wamwoowam"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Facebook</a></li>
+                            <li><a href="https://twitter.com/da_wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Twitter</a></li>
+                            <li><a href="https://www.instagram.com/wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://louisoft01.com/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Louisoft01 - Official Website</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extra <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://wamwoowam.ddns.net/modern/downloads.aspx"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>Downloads</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://wamwoowam.ddns.net/modern/links.aspx"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Links</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://wamwoowam.ddns.net/modern/settings.aspx"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://wamwoowam.ddns.net/modern/about.aspx">About</a></li>
+                </ul>
             </div>
         </div>
-        <div class="menu" style="clear: left; border-top-right-radius:0px; border-top-right-radius:0px;">
-            <ul>
-                <li>
-                    <a class="menuitem" href=""></a>
-                </li>
-            </ul>
+    </nav>
+
+    <div class="main">
+        <h1 align="center">You're in the wrong place mate!</h1>
+        <h4 align="center">This is my GitHub io page, it's here for assets to alleviate stress from my main server</h4>
+	<a href="http://wamwoowam.ddns.net/"><button type = "button" class = "btn btn-primary">Here's my actual site!</button></a>
+    </div>
+    <div class="container-fluid footer">
+        <div>
+            <h5>Copyright © Thomas May 2016. All Rights Reserved. - Powered by <a href="http://wamwoowam.github.io/">GitHub</a> & <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a> with icons by <a href="http://glyphicons.com/">Glyphicons</a></h5>
+            <h5>WamWooWam the Site! Version 2.0.3s</h5>
         </div>
-        <div class="main">
-            <h1>You're in the wrong place mate!</h1>
-            <h2>This is my github.io page. It's here for the assets that my site uses because my main server is slow as balls.</h2>
-            <h2><a href="http://wamwoowam.ddns.net/">Here's my actual site!</a></h2>
-        </div>
-        <div class="clear">
-        </div>
-        <div class="footer">
-            <asp:Panel ID="Panel1" HorizontalAlign="center">
-                <p> © WamWooWam 2016. All Rights Reserved</p>
-            </asp:Panel>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
