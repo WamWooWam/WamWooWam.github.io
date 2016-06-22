@@ -46,10 +46,8 @@ r > a; a++) e[a].style.cssText = "-webkit-backdrop-filter:blur(10px); background
 else for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length; r > a; a++) e[a].style.cssText = "backdrop-filter:blur(20px);
 background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0] + " ," + $(e[a]).css("background-color").match(/\d+/g)[1]
 + " ," + $(e[a]).css("background-color").match(/\d+/g)[2] + " ,0.95);" } $(document).ready(function () { var o = $("#main").width(),
-e = 70 * o / 100; $("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0), $("#embed").height(a), $("#embed").css("margin",
-"inherit, auto, inherit, auto"), Transp() }), $(window).resize(function () { var o = $("#main").width(), e = 70 * o / 100;
-$("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0), $("#embed").height(a), $("#embed").css("margin", "inherit, auto,
-inherit, auto") });</script></head>
+e = 70 * o / 100; $("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0); $("#embed").height(a); $("#embed").css("margin","inherit, auto, inherit, auto"), Transp() }), $(window).resize(function () { var o = $("#main").width(), e = 70 * o / 100;
+$("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0); $("#embed").height(a); $("#embed").css("margin", "inherit, auto, inherit, auto") });</script></head>
 <body style="padding-top: 55px; text-align: center;">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
