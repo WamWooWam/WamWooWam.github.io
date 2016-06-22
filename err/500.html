@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<!--
+         _       __              _       __          _       __                   __  __            _____ _ __
+        | |     / /___ _____ ___| |     / /___  ____| |     / /___ _____ ___     / /_/ /_  ___     / ___/(_) /____
+        | | /| / / __ `/ __ `__ \ | /| / / __ \/ __ \ | /| / / __ `/ __ `__ \   / __/ __ \/ _ \    \__ \/ / __/ _ \
+        | |/ |/ / /_/ / / / / / / |/ |/ / /_/ / /_/ / |/ |/ / /_/ / / / / / /  / /_/ / / /  __/   ___/ / / /_/  __/
+        |__/|__/\__,_/_/ /_/ /_/|__/|__/\____/\____/|__/|__/\__,_/_/ /_/ /_/   \__/_/ /_/\___/   /____/_/\__/\___/
+                                           __  ___            __
+                                          /  |/  /____   ____/ /___   _____ ____
+                                         / /|_/ // __ \ / __  // _ \ / ___// __ \
+                                        / /  / // /_/ // /_/ //  __// /   / / / /
+                                       /_/  /_/ \____/ \__,_/ \___//_/   /_/ /_/
+
+     -->
+<head>
+    <title>WamWooWam the Site!</title>
+    <link rel="stylesheet" href="https://wamwoowam.github.io/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://wamwoowam.github.io/css/wamwoowam.css" />
+    <script src="https://wamwoowam.github.io/js/jquery.js" type="application/javascript"></script>
+    <script src="https://wamwoowam.github.io/js/bootstrap.min.js"></script>
+    <style>@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:local('Open Sans Light'),local('OpenSans-Light'),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans'),local('OpenSans'),url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans Semibold'),local('OpenSans-Semibold'),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local('Open Sans Italic'),local('OpenSans-Italic'),url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff')}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <asp:ContentPlaceHolder ID="head">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 50px; text-align: center; font-family: 'Open Sans',  !important;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/modern/index.aspx" style="display: inline-block;">WamWooWam the Site!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/modern/index.aspx">Home</a></li>
+                    <li><a href="/modern/blog/index.php">Blog</a></li>
+                    <li><a href="/modern/forums/index.php">Fourms</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.youtube.com/user/woowamwam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>YouTube</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://www.facebook.com/wamwoowam"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Facebook</a></li>
+                            <li><a href="https://twitter.com/da_wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Twitter</a></li>
+                            <li><a href="https://www.instagram.com/wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://louisoft01.com/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Louisoft01 - Official Website</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extra <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/modern/downloads.aspx"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>Downloads</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/modern/links.aspx"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Links</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/modern/settings.aspx"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/modern/about.aspx">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <h1 align="center">Error 500 - Get over here dave, the servers on fire!</h1>
+        <h4 align="center">We've messed up!!! Badly!!! We've no clue whats going on!!! Here. Here's music, be happy!!!</h4>
+        <p align="center">
+            <audio controls>
+                <source src="https://wamwoowam.github.io/audio/rooftop.mp3" type="audio/mp3" />
+                Or maybe there isn't, it looks like you're on an ancient browser that doesn't support HTML5 audio, soz.
+            </audio>
+        </p>
+    </div>
+    <div class="container-fluid footer">
+        <div>
+            <h5>Copyright © Thomas May 2016. All Rights Reserved. - Powered by <a href="http://wamwoowam.github.io/">GitHub</a> & <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a> with icons by <a href="http://glyphicons.com/">Glyphicons</a></h5>
+            <h5>WamWooWam the Site! Version 2.0.6s</h5>
+        </div>
+    </div>
+</body>
+</html>

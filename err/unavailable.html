@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+         _       __              _       __          _       __                   __  __            _____ _ __
+        | |     / /___ _____ ___| |     / /___  ____| |     / /___ _____ ___     / /_/ /_  ___     / ___/(_) /____
+        | | /| / / __ `/ __ `__ \ | /| / / __ \/ __ \ | /| / / __ `/ __ `__ \   / __/ __ \/ _ \    \__ \/ / __/ _ \
+        | |/ |/ / /_/ / / / / / / |/ |/ / /_/ / /_/ / |/ |/ / /_/ / / / / / /  / /_/ / / /  __/   ___/ / / /_/  __/
+        |__/|__/\__,_/_/ /_/ /_/|__/|__/\____/\____/|__/|__/\__,_/_/ /_/ /_/   \__/_/ /_/\___/   /____/_/\__/\___/
+                                           __  ___            __
+                                          /  |/  /____   ____/ /___   _____ ____
+                                         / /|_/ // __ \ / __  // _ \ / ___// __ \
+                                        / /  / // /_/ // /_/ //  __// /   / / / /
+                                       /_/  /_/ \____/ \__,_/ \___//_/   /_/ /_/
+
+     -->
+
+<head>
+    <title>WamWooWam the Site!</title>
+    <link rel="stylesheet" href="https://wamwoowam.github.io/css/lumen.css" />
+    <script src="https://wamwoowam.github.io/js/jquery.js" type="application/javascript"></script>
+    <script src="https://wamwoowam.github.io/js/bootstrap.min.js"></script>
+    <style>@font-face{font-family:'Open Sans';font-style:normal;font-weight:300;src:local('Open Sans Light'),local('OpenSans-Light'),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans'),local('OpenSans'),url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans Semibold'),local('OpenSans-Semibold'),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:italic;font-weight:400;src:local('Open Sans Italic'),local('OpenSans-Italic'),url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff')}</style>
+    <style>
+        body{font-family:'Helvetica Neue','Open Sans'!important}h1.header{font-family:'Open Sans';font-weight:300}a[href^="//"]:after,a[href^="http://"]:after,a[href^="https://"]:after{content:url(/assets/img/external.png);margin:2px, 0px, 0px, 3px; text-decoration:underline;}a[href*="wamwoowam.ddns.net"]:after{content:'';margin:0}div.footer{position:absolute!important;bottom:0!important;width:100%!important;text-align:center!important}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:inherit;font-weight:400;line-height:1.1;color:inherit}.h1 .heavy,.h1 .light,.h1 heavy,.h1 light,.h2 .heavy,.h2 .light,.h2 heavy,.h2 light,.h3 .heavy,.h3 .light,.h3 heavy,.h3 light,.h4 .heavy,.h4 .light,.h4 heavy,.h4 light,.h5 .heavy,.h5 .light,.h5 heavy,.h5 light,.h6 .heavy,.h6 .light,.h6 heavy,.h6 light,h1 .heavy,h1 .light,h1 heavy,h1 light,h2 .heavy,h2 .light,h2 heavy,h2 light,h3 .heavy,h3 .light,h3 heavy,h3 light,h4 .heavy,h4 .light,h4 heavy,h4 light,h5 .heavy,h5 .light,h5 heavy,h5 light,h6 .heavy,h6 .light,h6 heavy,h6 light{font-weight:300;line-height:1;color:#777}.h1,.h2,.h3,h1,h2,h3{margin-top:20px;margin-bottom:10px}.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}.h4,.h5,.h6,h4,h5,h6{margin-top:10px;margin-bottom:10px}.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-size:75%}.h1,h1{font-size:36px!important}.h2,h2{font-size:30px!important}.h3,h3{font-size:24px!important}.h4,h4{font-size:16px!important}.h5,h5{font-size:14px!important}.h6,h6{font-size:8px!important}.audiojs{margin:15px 0 20px}audio,canvas,progress,video{display:block!important}.glyphicon{position:relative;top:2px!important;right:4px!important;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.navbar{margin-bottom:0!important}
+        @media only screen and (min-width : 120px) and (max-width :320px) {h1,.h1{font-size:22px!important;}h2,.h2{font-size:19px!important;}h3,.h3{font-size:16px!important;}h4,.h4{font-size:14px!important;}h5,.h5{font-size:12px!important;}h6,.h6{font-size:10px!important;}a.navbar-brand{font-size:15px!important;}}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <asp:ContentPlaceHolder ID="head">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding-top: 50px; text-align: center; font-family: 'Open Sans',  !important;">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.aspx" style="display: inline-block;">WamWooWam the Site!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../index.aspx">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Fourms</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.youtube.com/user/woowamwam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>YouTube</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://www.facebook.com/wamwoowam"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Facebook</a></li>
+                            <li><a href="https://twitter.com/da_wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Twitter</a></li>
+                            <li><a href="https://www.instagram.com/wamwoowam/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="https://louisoft01.com/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Louisoft01 - Official Website</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extra <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../downloads.aspx"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>Downloads</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../links.aspx"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Links</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../settings.aspx"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>Settings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.aspx">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="header">The page you're looking for is currently unavailable</h1>
+        <h2>Soz m9.</h2>
+        <button type="button" class="btn btn-primary" onclick="window.history.back();"><span class="glyphicon glyphicon-menu-left"></span> Go Back</button>
+    </div>
+    <div class="container-fluid footer">
+        <div>
+            <h5>Copyright © Thomas May 2016. All Rights Reserved. - Powered by <a href="http://wamwoowam.github.io/">GitHub</a> & <a href="http://getbootstrap.com/">Bootstrap v3.3.6</a> with icons by <a href="http://glyphicons.com/">Glyphicons</a></h5>
+            <h5>WamWooWam the Site! Version 2.0.6s</h5>
+        </div>
+    </div>
+</body>
+</html>
