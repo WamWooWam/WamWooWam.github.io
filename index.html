@@ -32,19 +32,15 @@
     <script>function KickAss() { var o = document.createElement("script"); o.type = "text/javascript", document.body.appendChild(o), o.src = "//hi.kickassapp.com/kickass.js"
 } function rainbow1() { sweep(document.body, "backgroundColor", "#f00", "#f00", { direction: -1, duration: 2e3 }); for (var
 o = $("p,h1,h2,h3,h4,h5,a,body"), e = 0, a = o.length; a > e; e++) sweep(o[e], "color", "yellow", "yellow", { direction:
--1, duration: 2e3 }), $(o[e]).css("font-family", "'Chalkboard SE', 'Comic Sans MS', 'TSCu_Comic', 'Open Sans', Glyphicons
-Halflings"); window.setTimeout(rainbow2, 2200) } function rainbow2() { sweep(document.body, "backgroundColor", "#f00", "#f00",
+-1, duration: 2e3 }), $(o[e]).css("font-family", "'Chalkboard SE', 'Comic Sans MS', 'TSCu_Comic', 'Open Sans', Glyphicons Halflings"); window.setTimeout(rainbow2, 2200) } function rainbow2() { sweep(document.body, "backgroundColor", "#f00", "#f00",
 { direction: -1, duration: 2e3 }); for (var o = $("p,h1,h2,h3,h4,h5,a,body"), e = 0, a = o.length; a > e; e++) sweep(o[e],
-"color", "yellow", "yellow", { direction: -1, duration: 2e3 }), $(o[e]).css("font-family", "'Chalkboard SE', 'Comic Sans
-MS', 'TSCu_Comic', 'Open Sans', Glyphicons Halflings"); window.setTimeout(rainbow1, 2200) } function Transp(o) { if (1 ==
-o) for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length; r > a; a++) e[a].style.cssText = "-webkit-backdrop-filter:blur(10px);
-background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0] + " ," + $(e[a]).css("background-color").match(/\d+/g)[1]
+"color", "yellow", "yellow", { direction: -1, duration: 2e3 }), $(o[e]).css("font-family", "'Chalkboard SE', 'Comic Sans MS', 'TSCu_Comic', 'Open Sans', Glyphicons Halflings"); window.setTimeout(rainbow1, 2200) } function Transp(o) { if (1 ==
+o) for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length; r > a; a++) e[a].style.cssText = "-webkit-backdrop-filter:blur(10px); background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0] + " ," + $(e[a]).css("background-color").match(/\d+/g)[1]
 + " ," + $(e[a]).css("background-color").match(/\d+/g)[2] + " ,0.8);"; else if (-1 != navigator.userAgent.indexOf("Safari")
 && -1 == navigator.userAgent.indexOf("Chrome")) for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length;
 r > a; a++) e[a].style.cssText = "-webkit-backdrop-filter:blur(10px); background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0]
 + " ," + $(e[a]).css("background-color").match(/\d+/g)[1] + " ," + $(e[a]).css("background-color").match(/\d+/g)[2] + " ,0.8);";
-else for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length; r > a; a++) e[a].style.cssText = "backdrop-filter:blur(20px);
-background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0] + " ," + $(e[a]).css("background-color").match(/\d+/g)[1]
+else for (var e = document.getElementsByClassName("transp"), a = 0, r = e.length; r > a; a++) e[a].style.cssText = "backdrop-filter:blur(20px); background: rgba(" + $(e[a]).css("background-color").match(/\d+/g)[0] + " ," + $(e[a]).css("background-color").match(/\d+/g)[1]
 + " ," + $(e[a]).css("background-color").match(/\d+/g)[2] + " ,0.95);" } $(document).ready(function () { var o = $("#main").width(),
 e = 70 * o / 100; $("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0); $("#embed").height(a); $("#embed").css("margin","inherit, auto, inherit, auto"), Transp() }), $(window).resize(function () { var o = $("#main").width(), e = 70 * o / 100;
 $("#embed").width(e); var a = e / 16 * 9; a = a.toFixed(0); $("#embed").height(a); $("#embed").css("margin", "inherit, auto, inherit, auto") });</script></head>
