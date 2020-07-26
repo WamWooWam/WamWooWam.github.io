@@ -1,0 +1,230 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Platformer2D/1.0.0": {
+        "dependencies": {
+          "Mono.WebAssembly.Build": "0.2.2",
+          "Mono.WebAssembly.Framework": "0.2.2",
+          "Mono.WebAssembly.Runtime": "0.2.2",
+          "MonoGame.Framework.Web": "1.0.0",
+          "NETStandard.Library": "2.0.3",
+          "WebAssembly.Bindings": "0.2.2",
+          "WebAssembly.Net.Http": "0.2.2",
+          "WebAssembly.Net.WebSockets": "0.2.2",
+          "WebGLDotNET": "2.1.0"
+        },
+        "runtime": {
+          "Platformer2D.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Mono.WebAssembly.Build/0.2.2": {},
+      "Mono.WebAssembly.Framework/0.2.2": {},
+      "Mono.WebAssembly.Runtime/0.2.2": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Memory/4.5.2": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.27129.4"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
+      "WebAssembly.Bindings/0.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Bindings.dll": {
+            "assemblyVersion": "0.2.2.0",
+            "fileVersion": "0.2.2.0"
+          }
+        }
+      },
+      "WebAssembly.Net.Http/0.2.2": {
+        "dependencies": {
+          "WebAssembly.Bindings": "0.2.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Net.Http.dll": {
+            "assemblyVersion": "0.2.2.0",
+            "fileVersion": "0.2.2.0"
+          }
+        }
+      },
+      "WebAssembly.Net.WebSockets/0.2.2": {
+        "dependencies": {
+          "WebAssembly.Bindings": "0.2.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebAssembly.Net.WebSockets.dll": {
+            "assemblyVersion": "0.2.2.0",
+            "fileVersion": "0.2.2.0"
+          }
+        }
+      },
+      "WebGLDotNET/2.1.0": {
+        "dependencies": {
+          "System.Memory": "4.5.2",
+          "WebAssembly.Bindings": "0.2.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebGLDotNET.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "MonoGame.Framework.Web/1.0.0": {
+        "dependencies": {
+          "WebAssembly.Bindings": "0.2.2",
+          "WebAssembly.Net.Http": "0.2.2",
+          "WebAssembly.Net.WebSockets": "0.2.2",
+          "WebGLDotNET": "2.1.0"
+        },
+        "runtime": {
+          "MonoGame.Framework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Platformer2D/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Build/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FHI7YpAOOF3NX5WUvxj3/MvfrSB0R3BH94i39uop1aMb+AQC6xGzO4yE3QZL7iss232k3rgf0V62nkMdPhseZg==",
+      "path": "mono.webassembly.build/0.2.2",
+      "hashPath": "mono.webassembly.build.0.2.2.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Framework/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e1ygQN5pXw6gVFvgmJJwjkNnwUvTqJ1l/gPFuO4OWnBoXxKi1NAsxzZTYI5Fuxk2qy8Gxq5k87FtFBvcofRyCA==",
+      "path": "mono.webassembly.framework/0.2.2",
+      "hashPath": "mono.webassembly.framework.0.2.2.nupkg.sha512"
+    },
+    "Mono.WebAssembly.Runtime/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aUSUY0WOtfnkC59iWL1n+qjAh4ZFhRVp9CQMF0eb5Zra72aYmoKf0wYHrmTvGp05Clw9Si3yR2Py8B0de1nUag==",
+      "path": "mono.webassembly.runtime/0.2.2",
+      "hashPath": "mono.webassembly.runtime.0.2.2.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvq1GNmUFwbKv+aLVYYdgu/+gc8Nu9oFujOxIjPrsf+meis9JBzTPDL6aP/eeGOz9yPj6rRLUbOjKMpsMEWpNg==",
+      "path": "system.memory/4.5.2",
+      "hashPath": "system.memory.4.5.2.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
+    "WebAssembly.Bindings/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bhMrlcieqRPfvuh1sLPdg3isLnvMLOTOeezRtw404FuMPTCXzC5YVsKaEPbmgX3IRU81Q8AUf5DSPzm89TS4/g==",
+      "path": "webassembly.bindings/0.2.2",
+      "hashPath": "webassembly.bindings.0.2.2.nupkg.sha512"
+    },
+    "WebAssembly.Net.Http/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uiaUh5t3Lp7SaosFD4n11FN62aEq4AKoSTNDHoyBWgMbDaF3HeUwOop8RbO9g2iophPv0t3XUWbPIF1+9t/oZA==",
+      "path": "webassembly.net.http/0.2.2",
+      "hashPath": "webassembly.net.http.0.2.2.nupkg.sha512"
+    },
+    "WebAssembly.Net.WebSockets/0.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OK8WPR8KXCjvQRVbEKYL3ZFSNTfAlwKszOMPMVazD+1QTQlEmoDg6eF9F8HEaCAxD3AisRKKMCjn86vEy8m7Sg==",
+      "path": "webassembly.net.websockets/0.2.2",
+      "hashPath": "webassembly.net.websockets.0.2.2.nupkg.sha512"
+    },
+    "WebGLDotNET/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0ydJvRo9m/86RwWdJJY31z+MoqSt9lT+j9t93U6A66hEY0NnZ8Xx+udSrtzY+32cVyz/qMyPVcRBVLvqkTWcTA==",
+      "path": "webgldotnet/2.1.0",
+      "hashPath": "webgldotnet.2.1.0.nupkg.sha512"
+    },
+    "MonoGame.Framework.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
