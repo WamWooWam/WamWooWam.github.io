@@ -299,7 +299,8 @@ Chat = {
                 color = twitchColors[nick.charCodeAt(0) % 15];
             }
 
-            var adjuster = new ColorAdjuster("#181818", 1);
+            var style = getComputedStyle(document.body).getPropertyValue("--background");
+            var adjuster = new ColorAdjuster(style, 1);
             color = adjuster.process(color);
 
             $username.css('color', color);
