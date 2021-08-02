@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatbox-v2/static/css/main.99644f6c.chunk.css",
-    "main.js": "/chatbox-v2/static/js/main.04d1d811.chunk.js",
-    "main.js.map": "/chatbox-v2/static/js/main.04d1d811.chunk.js.map",
+    "main.js": "/chatbox-v2/static/js/main.0a4a8f14.chunk.js",
+    "main.js.map": "/chatbox-v2/static/js/main.0a4a8f14.chunk.js.map",
     "runtime-main.js": "/chatbox-v2/static/js/runtime-main.bf50a314.js",
     "runtime-main.js.map": "/chatbox-v2/static/js/runtime-main.bf50a314.js.map",
     "static/js/2.7a25d0a7.chunk.js": "/chatbox-v2/static/js/2.7a25d0a7.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.bf50a314.js",
     "static/js/2.7a25d0a7.chunk.js",
     "static/css/main.99644f6c.chunk.css",
-    "static/js/main.04d1d811.chunk.js"
+    "static/js/main.0a4a8f14.chunk.js"
   ]
 }
