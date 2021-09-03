@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/chatbox-v2/static/css/main.c4f95d98.chunk.css",
-    "main.js": "/chatbox-v2/static/js/main.1c5e84fd.chunk.js",
-    "main.js.map": "/chatbox-v2/static/js/main.1c5e84fd.chunk.js.map",
+    "main.css": "/chatbox-v2/static/css/main.7fa8af0c.chunk.css",
+    "main.js": "/chatbox-v2/static/js/main.3c3c08e6.chunk.js",
+    "main.js.map": "/chatbox-v2/static/js/main.3c3c08e6.chunk.js.map",
     "runtime-main.js": "/chatbox-v2/static/js/runtime-main.bf50a314.js",
     "runtime-main.js.map": "/chatbox-v2/static/js/runtime-main.bf50a314.js.map",
-    "static/js/2.eaf3e0e1.chunk.js": "/chatbox-v2/static/js/2.eaf3e0e1.chunk.js",
-    "static/js/2.eaf3e0e1.chunk.js.map": "/chatbox-v2/static/js/2.eaf3e0e1.chunk.js.map",
+    "static/js/2.a775842b.chunk.js": "/chatbox-v2/static/js/2.a775842b.chunk.js",
+    "static/js/2.a775842b.chunk.js.map": "/chatbox-v2/static/js/2.a775842b.chunk.js.map",
     "index.html": "/chatbox-v2/index.html",
-    "static/css/main.c4f95d98.chunk.css.map": "/chatbox-v2/static/css/main.c4f95d98.chunk.css.map",
-    "static/js/2.eaf3e0e1.chunk.js.LICENSE.txt": "/chatbox-v2/static/js/2.eaf3e0e1.chunk.js.LICENSE.txt",
+    "static/css/main.7fa8af0c.chunk.css.map": "/chatbox-v2/static/css/main.7fa8af0c.chunk.css.map",
+    "static/js/2.a775842b.chunk.js.LICENSE.txt": "/chatbox-v2/static/js/2.a775842b.chunk.js.LICENSE.txt",
     "static/media/config.css": "/chatbox-v2/static/media/starlight-carnival-1.5d24018d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bf50a314.js",
-    "static/js/2.eaf3e0e1.chunk.js",
-    "static/css/main.c4f95d98.chunk.css",
-    "static/js/main.1c5e84fd.chunk.js"
+    "static/js/2.a775842b.chunk.js",
+    "static/css/main.7fa8af0c.chunk.css",
+    "static/js/main.3c3c08e6.chunk.js"
   ]
 }
