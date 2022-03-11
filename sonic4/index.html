@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <script type="text/javascript" src="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/require.js"></script>
-    <script type="text/javascript" src="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/mono-config.js"></script>
-    <script type="text/javascript" src="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/uno-config.js"></script>
-    <script type="text/javascript" src="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/uno-bootstrap.js"></script>
+    <script type="text/javascript" src="./package_c196385e448d51c654a36df311799c69876b5c81/require.js"></script>
+    <script type="text/javascript" src="./package_c196385e448d51c654a36df311799c69876b5c81/mono-config.js"></script>
+    <script type="text/javascript" src="./package_c196385e448d51c654a36df311799c69876b5c81/uno-config.js"></script>
+    <script type="text/javascript" src="./package_c196385e448d51c654a36df311799c69876b5c81/uno-bootstrap.js"></script>
     <script type="text/javascript">
         /* These functions are supposed to be included by passing
          * -s DEFAULT_LIBRARY_FUNCS_TO_INCLUDE=[...] to the emcc linker,
@@ -53,16 +53,17 @@
 
         const SDL_TRUE = 1;
     </script>
-    <script async type="text/javascript" src="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/dotnet.js"></script>
-    <link rel="stylesheet" type="text/css" href="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/normalize.css" />
-<link rel="stylesheet" type="text/css" href="./package_ca94bd9562d916c0bf10f59ec28be80b0d310026/uno-bootstrap.css" />
+    <script async type="text/javascript" src="./package_c196385e448d51c654a36df311799c69876b5c81/dotnet.js"></script>
+    <link rel="stylesheet" type="text/css" href="./package_c196385e448d51c654a36df311799c69876b5c81/normalize.css" />
+<link rel="stylesheet" type="text/css" href="./package_c196385e448d51c654a36df311799c69876b5c81/uno-bootstrap.css" />
     
 </head>
 <body>
     <div id="uno-body" class="container-fluid uno-body">
         <div class="uno-loader"
              loading-position="bottom"
-             loading-alert="none">
+             loading-alert="none"
+             style="z-index:10;" >
 
             <!-- Logo: change src to customize the logo -->
             <img class="logo"
@@ -73,40 +74,75 @@
             <span class="alert"></span>
         </div>
     </div>
-    <canvas id="canvas"></canvas>
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 800 480"
+         style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background:black;"
+         preserveAspectRatio="xMidYMid meet">
+        <foreignObject width="800" height="480">
+            <canvas id="canvas"></canvas>
+        </foreignObject>
+    </svg>
+
     <script>
-        // This is required for SDL2!
         Module.canvas = document.getElementById("canvas");
+        const WASM_initInput = (() => {
+            let WASM_canvas = document.getElementById("canvas");
+            let WASM_mouseDownHandler = null;
+            let WASM_mouseUpHandler = null;
+            let WASM_mouseMoveHandler = null;
+            let WASM_keyDownHandler = null;
+            let WASM_keyUpHandler = null;
+            WASM_canvas.addEventListener("mousedown", (ev) => {
+                if (WASM_mouseDownHandler === null) {
+                    WASM_mouseDownHandler = Module.mono_bind_static_method(
+                        "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseDown");
+                }
 
-        let WASM_mouseDownHandler = null;
-        let WASM_mouseUpHandler = null;
-        let WASM_mouseMoveHandler = null;
-        Module.canvas.addEventListener("mousedown", (ev) => {
-            if (WASM_mouseDownHandler === null) {
-                WASM_mouseDownHandler = Module.mono_bind_static_method(
-                    "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseDown");
-            }
+                let size = WASM_canvas.getBoundingClientRect();
+                WASM_mouseDownHandler(((ev.clientX - size.left) / size.width) * 800, ((ev.clientY - size.top) / size.height) * 480, ev.button);
+            })
 
-            WASM_mouseDownHandler(ev.clientX, ev.clientY, ev.button);
-        })
+            WASM_canvas.addEventListener("mouseup", (ev) => {
+                if (WASM_mouseUpHandler === null) {
+                    WASM_mouseUpHandler = Module.mono_bind_static_method(
+                        "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseUp");
+                }
 
-        Module.canvas.addEventListener("mouseup", (ev) => {
-            if (WASM_mouseUpHandler === null) {
-                WASM_mouseUpHandler = Module.mono_bind_static_method(
-                    "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseUp");
-            }
+                let size = WASM_canvas.getBoundingClientRect();
+                WASM_mouseUpHandler(((ev.clientX - size.left) / size.width) * 800, ((ev.clientY - size.top) / size.height) * 480, ev.button);
+            })
 
-            WASM_mouseUpHandler(ev.clientX, ev.clientY, ev.button);
-        })
+            WASM_canvas.addEventListener("mousemove", (ev) => {
+                if (WASM_mouseMoveHandler === null) {
+                    WASM_mouseMoveHandler = Module.mono_bind_static_method(
+                        "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseMove");
+                }
 
-        Module.canvas.addEventListener("mousemove", (ev) => {
-            if (WASM_mouseMoveHandler === null) {
-                WASM_mouseMoveHandler = Module.mono_bind_static_method(
-                    "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmMouse:InjectMouseMove");
-            }
+                let size = WASM_canvas.getBoundingClientRect();
+                WASM_mouseMoveHandler(((ev.clientX - size.left) / size.width) * 800, ((ev.clientY - size.top) / size.height) * 480);
+            })
 
-            WASM_mouseMoveHandler(ev.clientX, ev.clientY);
-        })
+            document.addEventListener("keydown", (ev) => {
+                if (WASM_keyDownHandler === null) {
+                    WASM_keyDownHandler = Module.mono_bind_static_method(
+                        "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmKeyboard:InjectKeyDown");
+                }
+
+                WASM_keyDownHandler(ev.keyCode);
+
+            });
+
+            document.addEventListener("keyup", (ev) => {
+                if (WASM_keyUpHandler === null) {
+                    WASM_keyUpHandler = Module.mono_bind_static_method(
+                        "[Sonic4Episode1.Wasm]Microsoft.Xna.Framework.Input.WasmKeyboard:InjectKeyUp");
+                }
+
+                WASM_keyUpHandler(ev.keyCode);
+            });
+        });
+        
     </script>
     <noscript>
         <p>This application requires Javascript and WebAssembly to be enabled.</p>
