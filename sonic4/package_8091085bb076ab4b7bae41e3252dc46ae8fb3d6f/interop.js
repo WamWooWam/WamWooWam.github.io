@@ -110,7 +110,7 @@
         getAudioBuffer(path) {
             var p = "/sonic4" + path;
             if (this.isGarbage) {
-                p = path.substring(0, path.length - 4) + ".m4a";
+                p = p.substring(0, p.length - 4) + ".m4a";
             }
             
             return window.fetch(p)
