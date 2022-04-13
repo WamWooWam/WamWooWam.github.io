@@ -1,6 +1,10 @@
 <launcher version="2">
   <view name="Start">
-    <group name="This is a tile group!">
+    <group name="Socials">
+      <tile AppID="Socials_zfgz6xjnaz0ym!Twitter" size="square150x150" FencePost="0" />
+      <tile AppID="Socials_zfgz6xjnaz0ym!Twitch" size="square150x150" FencePost="0" />
+    </group>
+    <!-- <group name="This is a tile group!">
       <tile AppID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!Microsoft.WindowsLive.Mail" size="wide310x150" FencePost="0"/>
       <tile AppID="Microsoft.BingSports_8wekyb3d8bbwe!AppexSports" size="wide310x150" FencePost="0"/>
       <tile AppID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!Microsoft.WindowsLive.People" size="square150x150" FencePost="0"/>
@@ -31,6 +35,6 @@
       <tile AppID="Microsoft.BingFoodAndDrink_8wekyb3d8bbwe!AppexFoodAndDrink" size="square150x150" FencePost="0"/>
       <tile AppID="Microsoft.BingMaps_8wekyb3d8bbwe!AppexMaps" size="square150x150" FencePost="0"/>
       <tile AppID="Microsoft.WindowsReadingList_8wekyb3d8bbwe!Microsoft.WindowsReadingList" size="square150x150" FencePost="0"/>
-    </group>
+    </group> -->
   </view>
 </launcher>
