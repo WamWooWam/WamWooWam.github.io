@@ -5,8 +5,7 @@ body {
     background-color: #111111;
 }
 
-.tiles-container {
-}
+.tiles-container {}
 
 .tile {
     position: absolute;
@@ -14,38 +13,29 @@ body {
     left: 120px;
     width: 248px;
     height: 120px;
-    transform-style: preserve-3d;
     perspective-origin: center;
     transform-style: preserve-3d;
     will-change: transform;
-    overflow: hidden;
 }
 
-.tile-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgb(255, 89, 117), rgb(255, 115, 138));
-    backface-visibility: hidden;
-}
-
+.tile-front,
 .tile-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, rgb(255, 89, 117), rgb(255, 115, 138));
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-    transform: rotateY(180deg);
-    pointer-events: none;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-.tile-back>*, .tile-front>*{
-    position: absolute;
-    transform-origin: top left;
-    will-change: transform;
-    width: 100%;
-    height: 100%;
+/* Style the front side (fallback if image is missing) */
+.tile-front {}
+
+/* Style the back side */
+.tile-back {
+    transform: rotateY(180deg);
 }
 
 .tile-border {
@@ -85,7 +75,7 @@ body {
 
 .core-window {
     position: absolute;
-    pointer-events: all;    
+    pointer-events: all;
     width: 100%;
     height: 100%;
     background: white;
@@ -112,7 +102,7 @@ body {
 }
 
 .core-window-titlebar.hidden {
-    opacity: 1;    
+    opacity: 1;
     display: flex;
     transition-delay: 0.35s;
     transform: translateY(-30px);
@@ -149,10 +139,10 @@ body {
     border: none;
 }
 
-.core-window-minimise::after{
+.core-window-minimise::after {
     content: "\E108";
     /* this is absurdly cursed */
-    transform: translateY(4px); 
+    transform: translateY(4px);
     display: inline-block;
 }
 
@@ -180,7 +170,7 @@ body {
     border: none;
 }
 
-.core-window-close::after{
+.core-window-close::after {
     content: "\E10A";
 }
 
@@ -224,4 +214,11 @@ body {
     bottom: 0;
     left: 0;
     color: white;
+}
+
+.tile-front-image .wide310x150 {
+    width: 248px;
+    height: 120px;
+    margin-top: -1;
+    margin-left: -1;
 }
